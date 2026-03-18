@@ -1,0 +1,20 @@
+[project]
+name = "docufetch"
+version = "0.1.0"
+description = "Autonomous documentation crawler and vectorizer for LLM context grounding"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "chromadb>=0.4",
+    "click>=8.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+docufetch = "docufetch.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
